@@ -1,6 +1,6 @@
 streamlit
 pandas
 Pillow
-cv2
+opencv
 requests
 json

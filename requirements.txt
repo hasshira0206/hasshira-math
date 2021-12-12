@@ -1,6 +1,1 @@
 streamlit
-pandas
-Pillow==8.4.0
-cv2
-requests
-json

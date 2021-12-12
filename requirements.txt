@@ -2,5 +2,8 @@ streamlit
 pandas
 Pillow
 opencv
+Opnecv
+Cv2
+cv2
 requests
 json

@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from PIL import Image, ImageDraw
-import cv2 as cv
+import cv2
 import requests, json
 import streamlit as st
 st.write('エラーが出ていますが、気にしない。気にしない。')
@@ -30,11 +30,11 @@ if st.checkbox("確定！"):
     num=int(num[0])
     st.write(keisan(K,num),"度になります")
     if st.checkbox("迫力を味わう"):
-        imgA = cv.imread('a.png')
+        imgA = cv2.imread('a.png')
         mozi=str(keisan(K,num))+"!!!!!!!!!!!!!!"
-        cv.putText(imgA,mozi, (140, 160), cv.FONT_HERSHEY_PLAIN, 4, (255,0,0), 5, cv.LINE_AA)
+        cv2.putText(imgA,mozi, (140, 160), cv2.FONT_HERSHEY_PLAIN, 4, (255,0,0), 5, cv2.LINE_AA)
         st.image(imgA)
     if K=="夏至！":
-        img = cv.imread('test.PNG')
-        cv.putText(img, str(keisan(K,num)), (1750, 642), cv.FONT_HERSHEY_PLAIN, 4, (255,0,0), 5, cv.LINE_AA)
+        img = cv2.imread('test.PNG')
+        cv2.putText(img, str(keisan(K,num)), (1750, 642), cv2.FONT_HERSHEY_PLAIN, 4, (255,0,0), 5, cv2.LINE_AA)
         st.image(img)
